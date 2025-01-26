@@ -17,7 +17,7 @@ int isValidMove(int rowIndex, int columnIndex, int value, Board* board);
 int solveRecursively(int rowIndex, int columnIndex, Board* board);
 void displayBoardState(Board* board);
 
-int main(char* argv, int argc) {
+int main(void) {
     Board board = {{
         {5, 3, 0, 0, 7, 0, 0, 0, 0},
         {6, 0, 0, 1, 9, 5, 0, 0, 0},
