@@ -154,6 +154,7 @@ int solveRecursively(int rowIndex, int columnIndex, Board* board) {
 void displayBoardState(Board* board) {
     int lastColumnIndex = NUM_COLS - 1;
 
+    printf("\n");
     for (int i = 0; i < NUM_ROWS; i++) {
         for (int j = 0; j < lastColumnIndex; j++) {
             if (((j + 1) % SQUARE_SIZE) != 0) printf("%c ", (board->boardState[i][j] == 0 ? ' ' : board->boardState[i][j] + '0'));
@@ -162,4 +163,5 @@ void displayBoardState(Board* board) {
         if (((i + 1) % SQUARE_SIZE) != 0 || i == NUM_ROWS - 1) printf("%c\n", board->boardState[i][lastColumnIndex] == 0 ? ' ' : board->boardState[i][lastColumnIndex] + '0');
         else printf("%c\n=======================\n", board->boardState[i][lastColumnIndex] == 0 ? ' ' : board->boardState[i][lastColumnIndex] + '0');
     }
+    printf("\n");
 }
