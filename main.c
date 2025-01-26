@@ -18,19 +18,6 @@ int solveRecursively(int rowIndex, int columnIndex, Board* board);
 void displayBoardState(Board* board);
 
 int main(char* argv, int argc) {
-    /*
-    Board board = {{
-        {0, 1, 0, 2, 0, 8, 0, 0, 0},
-        {0, 0, 0, 7, 0, 0, 0, 2, 6},
-        {0, 0, 2, 1, 4, 0, 0, 9, 0},
-        {0, 0, 0, 0, 0, 2, 7, 0, 1},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {3, 0, 4, 8, 0, 0, 0, 0, 0},
-        {0, 3, 0, 0, 2, 7, 5, 0, 0},
-        {4, 8, 0, 0, 0, 3, 0, 0, 0},
-        {0, 0, 0, 6, 0, 1, 0, 3, 0},
-    }};
-    */
     Board board = {{
         {5, 3, 0, 0, 7, 0, 0, 0, 0},
         {6, 0, 0, 1, 9, 5, 0, 0, 0},
